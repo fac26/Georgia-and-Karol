@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Us</title>
+  </head>
+
+  <body>
+    <form class="center" action="">
+      <h1>Contact us</h1>
+      <label for="name">Name:</label>
+      <input type="text" name="name" placeholder="Name">
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" placeholder="Email address">
+
+      <label for="phone">Phone:</label>
+      <input type="tel" name="number" placeholder="Number">
+
+      <label for="message">Message:</label>
+      <textarea name="message" placeholder="Your message" rows="10"></textarea>
+
+      <fieldset>
+        <legend>Contact preference:</legend>
+
+        <label for="contact-email">Email</label>
+        <input id="contact-email" type="radio" name="contact" value="email" checked>
+
+        <label for="contact-tel">Phone</label>
+        <input id="contact-tel" type="radio" name="contact" value="tel">
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+
 </html>

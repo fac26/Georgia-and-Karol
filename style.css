@@ -1,15 +1,47 @@
-body {
-  background-color: #ffffff;
+* {
+  box-sizing: border-box;
+  font-family: verdana;
+  padding: 0;
+  margin: 0;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+body {
+  background-color: #ffffff;
+  color: #313131;
+  padding-top: 5em;
+  font-size: 1rem;
 }
 
 .center {
-  max-width: 30rem;
+  max-width: 50rem;
   margin: 0 auto;
-  padding: 2rem;
+}
+
+form > * {
+  display: flex;
+  margin-top: 1rem;
+}
+
+form > div {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+form > div > input, textarea {
+  width: 40rem;
+}
+
+fieldset {
+  flex-direction: row;
+  border: 0px;
+}
+
+fieldset > div {
+  margin-right: 4rem;
+  border: 1px solid;
+}
+
+textarea {
+  resize: vertical;
+  max-height: 20rem;
 }

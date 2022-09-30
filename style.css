@@ -17,21 +17,22 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
   gap: 1rem;
 }
 
 .f-box_layout {
-  flex-direction: row;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
 }
 
 .f-lbl_layout {
-  flex: 1;
+  min-width: 60px;
 }
 
-.f-inp_layout {
-  flex: 9;
-}
+/*.f-inp_layout {
+
+}*/
 
 .f-ta_layout {
   resize: none;
@@ -39,9 +40,19 @@
 
 /* Look */
 
-
 .f-inp_style {
   border-radius: 5px;
   border: 1px solid;
   text-shadow: 0 0 0.1px;
+}
+
+
+@media (max-width: 260px) {
+  .f-box_layout {
+    grid-template-columns: 1fr;
+  }
+
+  .f-lbl_layout {
+    text-align: center;
+  }
 }

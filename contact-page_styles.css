@@ -44,6 +44,7 @@
 
 .f-inp__style {
   border-radius: 5px;
+  background-color: black opacity;
   border: 1px solid;
   text-shadow: 0 0 0.1px;
 }

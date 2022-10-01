@@ -2,6 +2,12 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+img  {
+  max-width: 100%;
+  object-fit: contain;
+  border: solid;
+}
+
 /* navbar */
 .navbar {
   position: fixed;
@@ -49,7 +55,7 @@
 .feature {
   flex: 1;
   padding: 2rem;
-  margin: 0px 1.25rem;
+  margin: 2.25rem;
   background-color: white;
 }
 

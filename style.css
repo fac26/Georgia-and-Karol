@@ -30,13 +30,15 @@
   min-width: 60px;
 }
 
-/*.f-inp_layout {
-
-}*/
-
 .f-ta__layout {
   resize: none;
 }
+
+/*
+.f-inp_layout {
+
+}
+*/
 
 /* Look */
 
@@ -46,6 +48,7 @@
   text-shadow: 0 0 0.1px;
 }
 
+/* Scaling */
 
 @media (max-width: 260px) {
   .f-box__layout {

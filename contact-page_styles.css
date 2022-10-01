@@ -1,46 +1,46 @@
 :root {
-  font-size: 14px;
+  font-size: 1rem;
   font-family: verdana, arial, helvetica, sans-serif;
   background-color: #ffffff;
   max-width: 50rem;
-  text-shadow: 0 0 1px black;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 /* Structure */
 .center {
-  margin: 0 auto;
   text-align: center;
+  margin: 0 auto;
 }
 
 .f__layout {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .f-box__layout {
   display: grid;
-  grid-template-columns: 1fr 5fr;
-}
-
-.f-lbl__layout {
-  min-width: 60px;
+  grid-template-columns: 1fr 6fr;
+  margin: 0 1rem;
 }
 
 .f-ta__layout {
   resize: none;
 }
 
-/*
-.f-inp_layout {
-
+.btn__layout {
+  font-size: 1.2rem;
+  padding: 1rem 4rem;
+  border: 0;
 }
-*/
 
 /* Look */
+
+.f__style {
+  border: 1px solid;
+}
 
 .f-inp__style {
   border-radius: 5px;
@@ -49,9 +49,21 @@
   text-shadow: 0 0 0.1px;
 }
 
+.btn__style {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: black 1px -1px 5px 0 inset;
+  cursor: pointer;
+  transition: all 250ms;
+}
+
+.btn__style:hover {
+  box-shadow: blue 1px -1px 5px 0 inset, blue -1px 1px 1px 1px inset;
+}
+
 /* Scaling */
 
-@media (max-width: 260px) {
+@media (max-width: 290px) {
   .f-box__layout {
     grid-template-columns: 1fr;
   }

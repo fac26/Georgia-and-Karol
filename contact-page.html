@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="contact-page_styles.css" />
-    <!--<script src="script.js" async></script>-->
+    <script src="contact-page_script.js" async></script>
     <title>Contact Us</title>
   </head>
 
@@ -16,20 +16,20 @@
 
       <!--Name-->
       <div class="f__layout f-box__layout">
-        <label for="name">Name:</label>
+        <label class="f-lbl__layout" for="name">Name:</label>
         <input class="f-inp__style" type="text" name="name" placeholder="Name" required />
       </div>
 
       <!--Email-->
       <div class="f__layout f-box__layout">
-        <label for="email">Email:</label>
+        <label class="f-lbl__layout" for="email">Email:</label>
         <input class="f-inp__style" type="email" name="email" placeholder="Email address" required />
       </div>
 
       <!--Phone-->
       <div class="f__layout f-box__layout">
-        <label for="phone">Phone:</label>
-        <input class="f-inp__style" type="tel" name="phone" placeholder="Number" pattern="[0-9]" maxlength="11" required />
+        <label class="f-lbl__layout" for="phone">Phone:</label>
+        <input class="f-inp__style" type="tel" name="phone" placeholder="Number" maxlength="11" />
       </div>
 
       <!--Message-->
@@ -37,10 +37,9 @@
         <label for="message">Message:</label>
         <textarea class="f-ta__layout f-inp__style" id="message-box" name="message" placeholder="Your message" maxlength="500" rows="5" required></textarea>
       </div>
-
+      
       <fieldset class="center f-inp__style">
-        <label>Contact preference:</label>
-
+        <legend class="lgnd__layout lgnd__style">Contact preference:</legend>
         <div>
           <label for="contact-email">Email</label>
           <input id="contact-email" type="radio" name="contact" value="email" checked />

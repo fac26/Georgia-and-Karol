@@ -1,74 +1,84 @@
 :root {
-  font-size: 1rem;
-  font-family: verdana, arial, helvetica, sans-serif;
-  background-color: #ffffff;
-  max-width: 50rem;
-  margin: 0 auto;
-  padding: 1rem;
+	font-size: 1rem;
+	font-family: verdana, arial, helvetica, sans-serif;
+	background-color: #ffffff;
+	max-width: 50rem;
+	margin: 0 auto;
 }
 
 /* Structure */
 .center {
-  text-align: center;
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 .f__layout {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	gap: 1.5rem;
 }
 
 .f-box__layout {
-  display: grid;
-  grid-template-columns: 1fr 6fr;
-  margin: 0 1rem;
+	display: grid;
+	grid-template-columns: 1fr 6fr;
+	margin: 0 1rem;
+}
+
+.f-lbl__layout {
+  margin-right: 1rem;
 }
 
 .f-ta__layout {
-  resize: none;
+	resize: none;
+}
+
+.lgnd__layout {
+  margin: 1rem;
+  padding: 1rem;
 }
 
 .btn__layout {
-  font-size: 1.2rem;
-  padding: 1rem 4rem;
-  border: 0;
+	font-size: 1.2rem;
+	padding: 1rem 4rem;
+	border: 0;
 }
 
 /* Look */
 
 .f__style {
-  border: 1px solid;
+	border: 1px solid;
 }
 
 .f-inp__style {
-  border-radius: 5px;
-  background-color: black opacity;
-  border: 1px solid;
-  text-shadow: 0 0 0.1px;
+	border-radius: 5px;
+	border: 1px solid;
+}
+
+.lgnd__style {
+  outline: 2px solid;
+
 }
 
 .btn__style {
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: black 1px -1px 5px 0 inset;
-  cursor: pointer;
-  transition: all 250ms;
-}
-
-.btn__style:hover {
-  box-shadow: blue 1px -1px 5px 0 inset, blue -1px 1px 1px 1px inset;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: black 1px -1px 5px 0 inset;
+	cursor: pointer;
+	transition: 100ms;
+} .btn__style:hover {
+  box-shadow: gray 1px -1px 5px 0 inset;
+} .btn__style:active {
+  box-shadow: gray 1px -5px 5px 5px inset;
 }
 
 /* Scaling */
 
 @media (max-width: 290px) {
-  .f-box__layout {
-    grid-template-columns: 1fr;
-  }
+	.f-box__layout {
+		grid-template-columns: 1fr;
+	}
 
-  .f-lbl__layout {
-    text-align: center;
-  }
+	.f-lbl__layout {
+		text-align: center;
+	}
 }

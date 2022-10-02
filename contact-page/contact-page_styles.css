@@ -1,0 +1,94 @@
+:root {
+	font-family: verdana, helvetica, sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 0 auto;
+	font-size: 1rem;
+	max-width: 50rem;
+}
+
+/* Structure */ /*f=form lbl=label inp=input fs=fieldset lgnd=legend*/
+
+.f__layout {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.4rem;
+}
+
+.f-box__layout {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	padding: 0 1rem;
+}
+
+.f-lbl__layout {
+	display: inline-block;
+	width: 10rem;
+}
+
+.f-inp__layout {
+	resize: none;
+	max-width: 300em;
+}
+
+.f-btn__layout {
+	padding: 0.5rem 5rem;
+	font-size: 1rem;
+}
+
+/* Look */
+
+.required {
+  color: red;
+}
+
+.f__border {
+	box-shadow: 10px 0 15px #313131 inset;
+	border: 1px solid lightgray;
+	padding: 2rem;
+}
+
+.f-inp__border {
+	border: 0;
+	border-bottom: 2px inset;
+}
+
+.f-fs__border {
+	border: none;
+}
+
+.f-btn__style {
+	border: none;
+	cursor: pointer;
+	background-color: #fbaf00;
+	box-shadow: 1px -1px 5px 0 #313131;
+	border-radius: 5px;
+}
+.f-btn__style:hover {
+	outline: 2px inset;
+}
+.f-btn__style:active {
+	box-shadow: 0 -1px 1px 0 gray inset;
+}
+
+/* Scaling */
+
+@media (max-width: 350px) {
+	.f__layout {
+		gap: 1rem;
+	}
+
+	.f-box__layout {
+		grid-template-columns: 1fr;
+		padding: 0;
+		margin: 0;
+	}
+
+	.f-btn__layout {
+		padding: 0.5rem 2rem;
+	}
+}

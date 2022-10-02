@@ -1,11 +1,11 @@
 :root {
 	font-family: verdana, helvetica, sans-serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin: 0 auto;
-  font-size: 1rem;
-	max-width: 40rem;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 0 auto;
+	font-size: 1rem;
+	max-width: 50rem;
 }
 
 /* Structure */ /*f=form lbl=label inp=input fs=fieldset lgnd=legend*/
@@ -27,7 +27,7 @@
 
 .f-lbl__layout {
 	display: inline-block;
-	width: 6rem;
+	width: 10rem;
 }
 
 .f-inp__layout {
@@ -36,21 +36,25 @@
 }
 
 .f-btn__layout {
-  padding: 0.5rem 5rem;
+	padding: 0.5rem 5rem;
 	font-size: 1rem;
 }
 
 /* Look */
 
+.required {
+  color: red;
+}
+
 .f__border {
-  box-shadow: 10px 0 15px #313131 inset;
+	box-shadow: 10px 0 15px #313131 inset;
 	border: 1px solid lightgray;
 	padding: 2rem;
 }
 
 .f-inp__border {
 	border: 0;
-  border-bottom: 2px inset;
+	border-bottom: 2px inset;
 }
 
 .f-fs__border {
@@ -58,12 +62,11 @@
 }
 
 .f-btn__style {
-  border: none;
+	border: none;
 	cursor: pointer;
-  background-color: #fbaf00;
-  box-shadow: 1px -1px 5px 0 #313131;
+	background-color: #fbaf00;
+	box-shadow: 1px -1px 5px 0 #313131;
 	border-radius: 5px;
-
 }
 .f-btn__style:hover {
 	outline: 2px inset;

@@ -11,47 +11,47 @@
   </head>
 
   <body>
-    <form class="f__layout f__style" action="">
-      <h1 class="center">Contact us</h1>
+    <form class="f__layout f__border" action="">
+      <h1 class="">Contact us</h1>
 
       <!--Name-->
-      <div class="f__layout f-box__layout">
+      <div class="f-box__layout">
         <label class="f-lbl__layout" for="name">Name:</label>
-        <input class="f-inp__style" type="text" name="name" placeholder="Name" required />
+        <input class="f-inp__layout f-inp__border" type="text" name="name" placeholder="Name" required />
       </div>
 
       <!--Email-->
-      <div class="f__layout f-box__layout">
+      <div class="f-box__layout">
         <label class="f-lbl__layout" for="email">Email:</label>
-        <input class="f-inp__style" type="email" name="email" placeholder="Email address" required />
+        <input class="f-inp__layout f-inp__border" type="email" name="email" placeholder="Email address" required />
       </div>
 
       <!--Phone-->
-      <div class="f__layout f-box__layout">
+      <div class="f-box__layout">
         <label class="f-lbl__layout" for="phone">Phone:</label>
-        <input class="f-inp__style" type="tel" name="phone" placeholder="Number" maxlength="11" />
+        <input class="f-inp__layout f-inp__border" type="tel" name="phone" placeholder="Number" maxlength="11" />
       </div>
 
       <!--Message-->
-      <div class="f__layout f-box__layout">
-        <label for="message">Message:</label>
-        <textarea class="f-ta__layout f-inp__style" name="message" placeholder="Your message" maxlength="500" rows="5" required></textarea>
+      <div class="f-box__layout">
+        <label class="f-lbl__layout" for="message">Message:</label>
+        <textarea class="f-inp__layout f-ta__resize f-inp__border" name="message" placeholder="Your message" maxlength="500" rows="5" required></textarea>
       </div>
 
-      <fieldset class="center f-inp__style">
-        <legend class="lgnd__layout lgnd__style">Contact preference:</legend>
-        <div>
+      <fieldset class="f__layout f-fs__border">
+        <legend>Contact preference:</legend>
+        <div class="f-inp__border">
           <label for="contact-email">Email</label>
           <input type="radio" name="contact-email" value="email" checked />
         </div>
 
-        <div>
+        <div class="f-inp__border">
           <label for="contact-tel">Phone</label>
           <input type="radio" name="contact-tel" value="tel" />
         </div>
 
       </fieldset>
-      <button class="center btn__layout btn__style" type="submit">Submit</button>
+      <button class="f-btn__layout f-btn__style" type="submit">Submit</button>
     </form>
   </body>
 

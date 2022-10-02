@@ -12,34 +12,42 @@
 
   <body>
     <form class="f__layout f__border">
+
       <h1>Contact us</h1>
 
       <!--Name-->
       <div class="f-box__layout">
-        <label class="f-lbl__layout" for="name">Name:</label>
-        <input class="f-inp__layout f-inp__border" type="text" name="name" placeholder="Name" required />
+        <label class="f-lbl__layout" for="name">Name<span class="required">*</span></label>
+        <input class="f-inp__layout f-inp__border" aria-describedby="required-description" type="text" name="name" placeholder="Name" required />
+      </div>
+
+      <!--Company Name-->
+      <div class="f-box__layout">
+        <label class="f-lbl__layout" for="company-name">Company name<span class="required">*</span></label>
+        <input class="f-inp__layout f-inp__border" aria-describedby="required-description" type="text" name="company-name" placeholder="Company name" required />
       </div>
 
       <!--Email-->
       <div class="f-box__layout">
-        <label class="f-lbl__layout" for="email">Email:</label>
-        <input class="f-inp__layout f-inp__border" type="email" name="email" placeholder="Email address" required />
+        <label class="f-lbl__layout" for="email">Email<span class="required">*</span></label>
+        <input class="f-inp__layout f-inp__border" aria-describedby="required-description" type="email" name="email" placeholder="Email address" required />
       </div>
 
       <!--Phone-->
       <div class="f-box__layout">
-        <label class="f-lbl__layout" for="phone">Phone:</label>
+        <label class="f-lbl__layout" for="phone">Phone</label>
         <input class="f-inp__layout f-inp__border" type="tel" name="phone" pattern="[0-9]" placeholder="Phone number" maxlength="11" />
       </div>
 
       <!--Message-->
       <div class="f-box__layout">
-        <label class="f-lbl__layout" for="message">Message:</label>
-        <textarea class="f-inp__layout f-inp__border" name="message" placeholder="Message" maxlength="500" rows="5" required></textarea>
+        <label class="f-lbl__layout" for="message">Message<span class="required">*</span></label>
+        <textarea class="f-inp__layout f-inp__border" aria-describedby="required-description" name="message" placeholder="Message" maxlength="500" rows="3" required></textarea>
       </div>
 
       <fieldset class="f-fs__layout f-fs__border">
-        <legend class="f-inp__border">Contact preference:</legend>
+
+        <legend class="f-inp__border">Contact preference</legend>
 
         <div>
           <label for="contact-email">Email</label>
@@ -52,7 +60,13 @@
         </div>
 
       </fieldset>
-      <button class="f-btn__layout f-btn__style" type="submit">Submit</button>
+
+      <button class="f-btn__layout f-btn__style" type="submit" value="Submit">Submit</button>
+
+      <p aria-hidden="true" id="required-description">
+        <span class="required">*</span>Required field
+      </p>
+
     </form>
   </body>
 

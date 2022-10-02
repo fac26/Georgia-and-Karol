@@ -11,8 +11,8 @@
   </head>
 
   <body>
-    <form class="f__layout f__border" action="">
-      <h1 class="">Contact us</h1>
+    <form class="f__layout f__border">
+      <h1>Contact us</h1>
 
       <!--Name-->
       <div class="f-box__layout">
@@ -29,25 +29,26 @@
       <!--Phone-->
       <div class="f-box__layout">
         <label class="f-lbl__layout" for="phone">Phone:</label>
-        <input class="f-inp__layout f-inp__border" type="tel" name="phone" placeholder="Number" maxlength="11" />
+        <input class="f-inp__layout f-inp__border" type="tel" name="phone" pattern="[0-9]" placeholder="Phone number" maxlength="11" />
       </div>
 
       <!--Message-->
       <div class="f-box__layout">
         <label class="f-lbl__layout" for="message">Message:</label>
-        <textarea class="f-inp__layout f-ta__resize f-inp__border" name="message" placeholder="Your message" maxlength="500" rows="5" required></textarea>
+        <textarea class="f-inp__layout f-inp__border" name="message" placeholder="Message" maxlength="500" rows="5" required></textarea>
       </div>
 
-      <fieldset class="f__layout f-fs__border">
-        <legend>Contact preference:</legend>
-        <div class="f-inp__border">
+      <fieldset class="f-fs__layout f-fs__border">
+        <legend class="f-inp__border">Contact preference:</legend>
+
+        <div>
           <label for="contact-email">Email</label>
-          <input type="radio" name="contact-email" value="email" checked />
+          <input type="radio" name="pref" value="pref-email" checked />
         </div>
 
-        <div class="f-inp__border">
+        <div>
           <label for="contact-tel">Phone</label>
-          <input type="radio" name="contact-tel" value="tel" />
+          <input type="radio" name="pref" value="pref-tel" />
         </div>
 
       </fieldset>

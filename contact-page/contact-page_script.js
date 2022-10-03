@@ -1,5 +1,5 @@
 let form = document.querySelector("form");
-let fields = [];
+let fields = {};
 
 form.addEventListener("submit", (event) => {
 	event.preventDefault();

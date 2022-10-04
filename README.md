@@ -8,7 +8,9 @@
 
 ### Live Deployment
 
-[Live deployment](fac26.github.io/Georgia-and-Karol/)
+Live deployment: https://fac26.github.io/Georgia-and-Karol
+
+Project currently under `main` branch.
 
 ---
 

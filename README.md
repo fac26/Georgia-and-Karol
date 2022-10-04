@@ -8,7 +8,7 @@
 
 ### Live Deployment
 
-fac26.github.io/Georgia-and-Karol/
+[Live deployment](fac26.github.io/Georgia-and-Karol/)
 
 ---
 

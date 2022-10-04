@@ -43,6 +43,65 @@ img  {
   color: #fff;
 }
 
+
+/* title section */
+
+#title-section {
+  background-color: #f3f3f3;
+  margin-top: 6rem;
+  margin-bottom: 1rem
+  display: block;
+}
+
+#title-section p {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+#title-section .content {
+  text-align: center;
+}
+
+#title-section quote {
+  padding-right: 1.875rem;
+  font-family: "Palatino", serif;
+  font-size: 1.875rem;
+  line-height: 1.1;
+  font-style: italic;
+  color: #4a4a4a;
+}
+
+#title-logo {
+  display: block;
+  min-height: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  border: none;
+  padding-top: 1.5rem;
+}
+
+#title-section quote-citation {
+  height: 1.875rem;
+}
+
+@media only screen and (max-width: 760px) {
+  #title-section content {
+    padding: 1.875rem .625rem;
+  }
+
+  #title-section quote {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  #title-section quote-citation {
+    display: block;
+    padding-top: 1rem;
+    margin: auto;
+  }
+}
 /* About us Section */
 
 
@@ -50,8 +109,8 @@ img  {
   display: flex;
   justify-content: space-between;
   padding: 4rem 5%;
-  background-color: #f3f3f3;
-  margin-top: 4rem;
+  background-color: #313131;
+  margin-top: 2rem;
 }
 
 .feature {
@@ -186,7 +245,8 @@ img  {
 /* Quotes Section */
 
 #quotes-section {
-  background-color: #f3f3f3;
+  background-color: #313131;
+  color: #fff;
 }
 
 #quotes-section .content {

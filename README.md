@@ -4,6 +4,14 @@
 
 ## FAC26 Markup Project
 
+---
+
+### Live Deployment
+
+fac26.github.io/Georgia-and-Karol/
+
+---
+
 ### Task Overview
 
 Our challenge was to build an agency website as a team.

@@ -4,6 +4,16 @@
 
 ## FAC26 Markup Project
 
+---
+
+### Live Deployment
+
+Live deployment: https://fac26.github.io/Georgia-and-Karol
+
+Project currently under `main` branch.
+
+---
+
 ### Task Overview
 
 Our challenge was to build an agency website as a team.

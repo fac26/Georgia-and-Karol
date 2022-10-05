@@ -9,14 +9,14 @@
 /* Structure */
 
 .body__layout {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 	margin: 0;
 }
 
 .main__layout {
-  flex: 1 0 auto;
+	flex: 1 0 auto;
 }
 
 .nav__layout {
@@ -80,8 +80,10 @@
 	padding: 1.5rem 2rem;
 }
 
-.header, .footer_layout { /* evil footer hack */
-  height:2.4rem;
+.header,
+.footer_layout {
+	/* evil footer hack */
+	height: 2.4rem;
 }
 
 .copyright__layout {
